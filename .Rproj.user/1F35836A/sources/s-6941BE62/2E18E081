@@ -1,0 +1,33 @@
+{
+    "collab_server" : "",
+    "contents" : "",
+    "created" : 1568066958845.000,
+    "dirty" : false,
+    "encoding" : "",
+    "folds" : "",
+    "hash" : "0",
+    "id" : "2E18E081",
+    "lastKnownWriteTime" : 94529346086536,
+    "last_content_update" : 1568066958845,
+    "path" : null,
+    "project_path" : null,
+    "properties" : {
+        "cacheKey" : "801654FB",
+        "caption" : "titanic_dataset",
+        "contentUrl" : "grid_resource/gridviewer.html?env=&obj=titanic_dataset&cache_key=801654FB",
+        "displayedObservations" : "1309",
+        "environment" : "",
+        "expression" : "titanic_dataset",
+        "object" : "titanic_dataset",
+        "preview" : "0",
+        "totalObservations" : "1309",
+        "variables" : "21"
+    },
+    "read_only" : false,
+    "read_only_alternatives" : [
+    ],
+    "relative_order" : 5,
+    "source_on_save" : false,
+    "source_window" : "",
+    "type" : "r_dataframe"
+}

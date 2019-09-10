@@ -1,0 +1,50 @@
+####################solution for titanic Survived##############################
+
+##############################################################################
+# TItanic Survival Tutoraial - part 1 : creating First Prediction model
+##############################################################################
+# Titanic Dataset
+#Import the Training and Test dataset
+#train<-read.csv(file.choose(), stringsAsFactors = F, na.strings = c("", "NA", ""))
+titanic_dataset<-read.csv(file.choose(), stringsAsFactors = F, na.strings = c("", "NA", ""))
+
+#split the train and test set
+split  <- sample.split(titanic_dataset, SplitRatio = 0.36)
+train <- subset(titanic_dataset, split == "FALSE")
+test <- subset(titanic_dataset, split == "TRUE")
+str(train)
+str(test)
+summary(train)
+summary(test)
+
+##############################################################################
+# Lazy Predictor
+##############################################################################
+#initialized a survived column to 0
+test$Survived = 0
+my_solution <- data.frame(PassergerId = test$PassengerId, Survived = test$Survived)
+
+#check the row number - It should match with the test row number - 418
+nrow(my_solution)
+
+#writte  tthe soltion for submission
+write.csv(my_solution, file = "Lazy_predictor.csv", row.names = FALSE)
+
+
+##############################################################################
+# First Predictor with Gender
+##############################################################################
+table(train$Sex, train$Survived)
+prop.table(table(train$Sex, train$Survived))
+#copy os test
+test_one = test
+#nitiakized a surviced column to 0
+test_one$Survived <- 0
+#set survived to 1 if sex == "female"
+test_one$Survived[test$Sex == "female"] <- 1
+my_solution <- data.frame(PassengerId = test$PassengerId, Survived = test_one$Survived)
+#check the row number - It shoulf match with test row number - 418
+nrow(my_solution)
+#writte  tthe soltion for submission
+write.csv(my_solution, file = "Gender_model.csv", row.names = FALSE)
+

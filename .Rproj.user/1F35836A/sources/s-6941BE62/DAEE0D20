@@ -1,0 +1,26 @@
+{
+    "collab_server" : "",
+    "contents" : "",
+    "created" : 1567976096990.000,
+    "dirty" : false,
+    "encoding" : "UTF-8",
+    "folds" : "",
+    "hash" : "0",
+    "id" : "DAEE0D20",
+    "lastKnownWriteTime" : 1567981813,
+    "last_content_update" : 1567981813412,
+    "path" : "~/progResearch/R/datascienceR/session11.R",
+    "project_path" : "session11.R",
+    "properties" : {
+        "cursorPosition" : "6,5",
+        "scrollLine" : "0",
+        "tempName" : "Untitled1"
+    },
+    "read_only" : false,
+    "read_only_alternatives" : [
+    ],
+    "relative_order" : 8,
+    "source_on_save" : false,
+    "source_window" : "",
+    "type" : "r_source"
+}
